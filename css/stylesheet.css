@@ -1,0 +1,175 @@
+/* flexbox mixins */
+/* styles for home page */
+.home {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  background-color: #1f1f1f;
+  color: #1f1f1f;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.8; }
+
+.navigation {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -moz-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  background-color: #ffffff;
+  padding: 25px 5%; }
+  .navigation .navigation-title {
+    color: #1f1f1f;
+    font-size: 36px;
+    font-weight: 300;
+    transition: ease-out 0.3s; }
+    .navigation .navigation-title:hover {
+      color: #ff008c; }
+  .navigation:first-of-type {
+    color: blue; }
+  .navigation .navigation-subtitle {
+    color: #ff008c;
+    font-size: 20px;
+    font-weight: 700; }
+  .navigation .navigation-links {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row; }
+  .navigation .navigation-link {
+    border-bottom: solid 3px #ffffff;
+    color: #1f1f1f;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 10px;
+    padding: 7px 7px 2px 7px;
+    transition: ease-out 0.3s; }
+    .navigation .navigation-link:hover {
+      color: #ff008c; }
+  .navigation .about-link {
+    border-bottom-color: #ff008c; }
+
+.introduction {
+  background-color: #ffffff;
+  padding: 50px 5% 100px 5%; }
+
+.introduction-areas-of-focus-title {
+  padding: 25px 0;
+  font-size: 26px;
+  font-weight: 300; }
+
+.introduction-areas-of-focus {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.introduction-area-of-focus {
+  border: solid 1px #eaeaea;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 350px;
+  margin: 0 33px 33px 0;
+  width: 250px; }
+
+/*portfolio page styles */
+/*end portfolio page styles */
+.footer {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  background-color: rgba(31, 31, 31, 0.4);
+  border-top: solid 2px #ff008c;
+  color: #eaeaea;
+  padding: 90px 7%;
+  position: relative; }
+  .footer:after {
+    background: url("../images/graffiti-alley.jpg") no-repeat left;
+    background-size: cover;
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.15;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1; }
+  .footer .footer-title {
+    color: #ff008c;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 5px; }
+  .footer .footer-social-media-links {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row; }
+  .footer .footer-social-media-icon {
+    background-color: rbga(0, 0, 0, 1);
+    border-radius: 50%;
+    height: 46px;
+    margin: 0 25px 15px 0;
+    transition: ease-out 0.3s;
+    width: 46px; }
+    .footer .footer-social-media-icon:first-of-type {
+      height: 43px;
+      width: 43px; }
+    .footer .footer-social-media-icon:hover {
+      background-color: #ff008c;
+      height: 46px;
+      width: 46px; }
+      .footer .footer-social-media-icon:hover:first-of-type {
+        height: 43px;
+        width: 43px;
+        border-radius: 10px; }
+      .footer .footer-social-media-icon:hover:last-of-type {
+        border-radius: 13px; }
+  .footer .footer-resume-link {
+    color: #eaeaea;
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    transition: ease-out 0.3s;
+    width: 170px; }
+    .footer .footer-resume-link:hover {
+      color: #ff008c; }
+
+/*# sourceMappingURL=stylesheet.css.map */
